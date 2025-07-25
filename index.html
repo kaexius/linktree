@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your personal link hub - Connect with me on all platforms">
+    <meta name="author" content="Your Name">
+    <title>Your Name - Linktree</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='18' font-size='20'>🔗</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <!-- Replace this URL with your actual profile picture -->
+            <img src="https://via.placeholder.com/120/667eea/ffffff?text=YN" alt="Profile Picture" class="profile-img">
+            
+            <!-- Update with your name -->
+            <h1>Your Name</h1>
+            
+            <!-- Update with your title/profession -->
+            <p>Content Creator & Developer</p>
+            
+            <!-- Update with your bio -->
+            <p class="bio">Welcome to my digital space! Connect with me across all platforms.</p>
+        </div>
+
+        <!-- Main Links Section -->
+        <div class="links">
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourusername" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                Follow me on Instagram
+            </a>
+            
+            <!-- YouTube -->
+            <a href="https://youtube.com/@yourusername" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+                Subscribe to my YouTube
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@yourusername" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-tiktok"></i>
+                Watch my TikToks
+            </a>
+            
+            <!-- Twitter/X -->
+            <a href="https://twitter.com/yourusername" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+                Follow me on Twitter
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/yourusername" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+                Connect on LinkedIn
+            </a>
+            
+            <!-- GitHub -->
+            <a href="https://github.com/yourusername" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                Check out my GitHub
+            </a>
+            
+            <!-- Portfolio/Website -->
+            <a href="https://yourwebsite.com" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-globe"></i>
+                Visit my Website
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:your.email@gmail.com" class="link-item">
+                <i class="fas fa-envelope"></i>
+                Send me an Email
+            </a>
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/1234567890" class="link-item" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                Chat on WhatsApp
+            </a>
+        </div>
+
+        <!-- Additional Social Media Icons -->
+        <div class="social-links">
+            <a href="https://facebook.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://discord.gg/yourinvite" class="social-link" target="_blank" rel="noopener noreferrer" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2024 Your Name. All rights reserved.</p>
+            <p>Made with ❤️ using <a href="#" class="brand">Linktree</a></p>
+        </div>
+    </div>
+
+    <!-- Optional: Add some JavaScript for enhanced interactions -->
+    <script>
+        // Add click tracking for analytics (optional)
+        document.querySelectorAll('.link-item, .social-link').forEach(link => {
+            link.addEventListener('click', function() {
+                // You can add analytics tracking here
+                console.log('Link clicked:', this.href);
+            });
+        });
+
+        // Add keyboard navigation support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+
+        document.addEventListener('mousedown', function() {
+            document.body.classList.remove('keyboard-navigation');
+        });
+    </script>
+</body>
+</html>
